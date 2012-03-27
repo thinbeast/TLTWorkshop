@@ -35,4 +35,9 @@
     }
 }
 
+- (IBAction)buttonPressed:(id)sender
+{
+    NSLog(@"OK");
+}
+
 @end

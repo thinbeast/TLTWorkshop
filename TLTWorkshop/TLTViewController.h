@@ -10,4 +10,6 @@
 
 @interface TLTViewController : UIViewController
 
+-(IBAction)buttonPressed:(id)sender;
+
 @end

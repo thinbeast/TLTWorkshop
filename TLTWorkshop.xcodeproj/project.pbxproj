@@ -23,13 +23,13 @@
 		EAEA32C9152202C9009CF455 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		EAEA32CB152202C9009CF455 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EAEA32CD152202C9009CF455 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		EAEA32D1152202C9009CF455 /* TLTWorkshop-Info.plist */ = {isa = PBXFileReference; path = "TLTWorkshop-Info.plist"; sourceTree = "<group>"; };
+		EAEA32D1152202C9009CF455 /* TLTWorkshop-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TLTWorkshop-Info.plist"; sourceTree = "<group>"; };
 		EAEA32D3152202C9009CF455 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EAEA32D5152202C9009CF455 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		EAEA32D7152202C9009CF455 /* TLTWorkshop-Prefix.pch */ = {isa = PBXFileReference; path = "TLTWorkshop-Prefix.pch"; sourceTree = "<group>"; };
-		EAEA32D8152202C9009CF455 /* TLTAppDelegate.h */ = {isa = PBXFileReference; path = TLTAppDelegate.h; sourceTree = "<group>"; };
+		EAEA32D7152202C9009CF455 /* TLTWorkshop-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TLTWorkshop-Prefix.pch"; sourceTree = "<group>"; };
+		EAEA32D8152202C9009CF455 /* TLTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLTAppDelegate.h; sourceTree = "<group>"; };
 		EAEA32D9152202C9009CF455 /* TLTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLTAppDelegate.m; sourceTree = "<group>"; };
-		EAEA32DB152202C9009CF455 /* TLTViewController.h */ = {isa = PBXFileReference; path = TLTViewController.h; sourceTree = "<group>"; };
+		EAEA32DB152202C9009CF455 /* TLTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLTViewController.h; sourceTree = "<group>"; };
 		EAEA32DC152202C9009CF455 /* TLTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLTViewController.m; sourceTree = "<group>"; };
 		EAEA32DF152202C9009CF455 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/TLTViewController_iPhone.xib; sourceTree = "<group>"; };
 		EAEA32E2152202C9009CF455 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/TLTViewController_iPad.xib; sourceTree = "<group>"; };
