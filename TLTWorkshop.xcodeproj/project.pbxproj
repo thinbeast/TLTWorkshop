@@ -1,0 +1,294 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EAEA32CA152202C9009CF455 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAEA32C9152202C9009CF455 /* UIKit.framework */; };
+		EAEA32CC152202C9009CF455 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAEA32CB152202C9009CF455 /* Foundation.framework */; };
+		EAEA32CE152202C9009CF455 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAEA32CD152202C9009CF455 /* CoreGraphics.framework */; };
+		EAEA32D4152202C9009CF455 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EAEA32D2152202C9009CF455 /* InfoPlist.strings */; };
+		EAEA32D6152202C9009CF455 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EAEA32D5152202C9009CF455 /* main.m */; };
+		EAEA32DA152202C9009CF455 /* TLTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EAEA32D9152202C9009CF455 /* TLTAppDelegate.m */; };
+		EAEA32DD152202C9009CF455 /* TLTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAEA32DC152202C9009CF455 /* TLTViewController.m */; };
+		EAEA32E0152202C9009CF455 /* TLTViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAEA32DE152202C9009CF455 /* TLTViewController_iPhone.xib */; };
+		EAEA32E3152202C9009CF455 /* TLTViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAEA32E1152202C9009CF455 /* TLTViewController_iPad.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EAEA32C5152202C9009CF455 /* TLTWorkshop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TLTWorkshop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAEA32C9152202C9009CF455 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EAEA32CB152202C9009CF455 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EAEA32CD152202C9009CF455 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EAEA32D1152202C9009CF455 /* TLTWorkshop-Info.plist */ = {isa = PBXFileReference; path = "TLTWorkshop-Info.plist"; sourceTree = "<group>"; };
+		EAEA32D3152202C9009CF455 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EAEA32D5152202C9009CF455 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EAEA32D7152202C9009CF455 /* TLTWorkshop-Prefix.pch */ = {isa = PBXFileReference; path = "TLTWorkshop-Prefix.pch"; sourceTree = "<group>"; };
+		EAEA32D8152202C9009CF455 /* TLTAppDelegate.h */ = {isa = PBXFileReference; path = TLTAppDelegate.h; sourceTree = "<group>"; };
+		EAEA32D9152202C9009CF455 /* TLTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLTAppDelegate.m; sourceTree = "<group>"; };
+		EAEA32DB152202C9009CF455 /* TLTViewController.h */ = {isa = PBXFileReference; path = TLTViewController.h; sourceTree = "<group>"; };
+		EAEA32DC152202C9009CF455 /* TLTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLTViewController.m; sourceTree = "<group>"; };
+		EAEA32DF152202C9009CF455 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/TLTViewController_iPhone.xib; sourceTree = "<group>"; };
+		EAEA32E2152202C9009CF455 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/TLTViewController_iPad.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EAEA32C2152202C9009CF455 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAEA32CA152202C9009CF455 /* UIKit.framework in Frameworks */,
+				EAEA32CC152202C9009CF455 /* Foundation.framework in Frameworks */,
+				EAEA32CE152202C9009CF455 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EAEA32BA152202C7009CF455 = {
+			isa = PBXGroup;
+			children = (
+				EAEA32CF152202C9009CF455 /* TLTWorkshop */,
+				EAEA32C8152202C9009CF455 /* Frameworks */,
+				EAEA32C6152202C9009CF455 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EAEA32C6152202C9009CF455 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EAEA32C5152202C9009CF455 /* TLTWorkshop.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EAEA32C8152202C9009CF455 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EAEA32C9152202C9009CF455 /* UIKit.framework */,
+				EAEA32CB152202C9009CF455 /* Foundation.framework */,
+				EAEA32CD152202C9009CF455 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EAEA32CF152202C9009CF455 /* TLTWorkshop */ = {
+			isa = PBXGroup;
+			children = (
+				EAEA32D8152202C9009CF455 /* TLTAppDelegate.h */,
+				EAEA32D9152202C9009CF455 /* TLTAppDelegate.m */,
+				EAEA32DB152202C9009CF455 /* TLTViewController.h */,
+				EAEA32DC152202C9009CF455 /* TLTViewController.m */,
+				EAEA32DE152202C9009CF455 /* TLTViewController_iPhone.xib */,
+				EAEA32E1152202C9009CF455 /* TLTViewController_iPad.xib */,
+				EAEA32D0152202C9009CF455 /* Supporting Files */,
+			);
+			path = TLTWorkshop;
+			sourceTree = "<group>";
+		};
+		EAEA32D0152202C9009CF455 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EAEA32D1152202C9009CF455 /* TLTWorkshop-Info.plist */,
+				EAEA32D2152202C9009CF455 /* InfoPlist.strings */,
+				EAEA32D5152202C9009CF455 /* main.m */,
+				EAEA32D7152202C9009CF455 /* TLTWorkshop-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EAEA32C4152202C9009CF455 /* TLTWorkshop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAEA32E6152202C9009CF455 /* Build configuration list for PBXNativeTarget "TLTWorkshop" */;
+			buildPhases = (
+				EAEA32C1152202C9009CF455 /* Sources */,
+				EAEA32C2152202C9009CF455 /* Frameworks */,
+				EAEA32C3152202C9009CF455 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TLTWorkshop;
+			productName = TLTWorkshop;
+			productReference = EAEA32C5152202C9009CF455 /* TLTWorkshop.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EAEA32BC152202C7009CF455 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TLT;
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = EAEA32BF152202C7009CF455 /* Build configuration list for PBXProject "TLTWorkshop" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EAEA32BA152202C7009CF455;
+			productRefGroup = EAEA32C6152202C9009CF455 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EAEA32C4152202C9009CF455 /* TLTWorkshop */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EAEA32C3152202C9009CF455 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAEA32D4152202C9009CF455 /* InfoPlist.strings in Resources */,
+				EAEA32E0152202C9009CF455 /* TLTViewController_iPhone.xib in Resources */,
+				EAEA32E3152202C9009CF455 /* TLTViewController_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EAEA32C1152202C9009CF455 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAEA32D6152202C9009CF455 /* main.m in Sources */,
+				EAEA32DA152202C9009CF455 /* TLTAppDelegate.m in Sources */,
+				EAEA32DD152202C9009CF455 /* TLTViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EAEA32D2152202C9009CF455 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAEA32D3152202C9009CF455 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EAEA32DE152202C9009CF455 /* TLTViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAEA32DF152202C9009CF455 /* en */,
+			);
+			name = TLTViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		EAEA32E1152202C9009CF455 /* TLTViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAEA32E2152202C9009CF455 /* en */,
+			);
+			name = TLTViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EAEA32E4152202C9009CF455 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EAEA32E5152202C9009CF455 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EAEA32E7152202C9009CF455 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TLTWorkshop/TLTWorkshop-Prefix.pch";
+				INFOPLIST_FILE = "TLTWorkshop/TLTWorkshop-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EAEA32E8152202C9009CF455 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TLTWorkshop/TLTWorkshop-Prefix.pch";
+				INFOPLIST_FILE = "TLTWorkshop/TLTWorkshop-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EAEA32BF152202C7009CF455 /* Build configuration list for PBXProject "TLTWorkshop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAEA32E4152202C9009CF455 /* Debug */,
+				EAEA32E5152202C9009CF455 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAEA32E6152202C9009CF455 /* Build configuration list for PBXNativeTarget "TLTWorkshop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAEA32E7152202C9009CF455 /* Debug */,
+				EAEA32E8152202C9009CF455 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EAEA32BC152202C7009CF455 /* Project object */;
+}
