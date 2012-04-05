@@ -7,205 +7,289 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EAEA32CA152202C9009CF455 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAEA32C9152202C9009CF455 /* UIKit.framework */; };
-		EAEA32CC152202C9009CF455 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAEA32CB152202C9009CF455 /* Foundation.framework */; };
-		EAEA32CE152202C9009CF455 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAEA32CD152202C9009CF455 /* CoreGraphics.framework */; };
-		EAEA32D4152202C9009CF455 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EAEA32D2152202C9009CF455 /* InfoPlist.strings */; };
-		EAEA32D6152202C9009CF455 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EAEA32D5152202C9009CF455 /* main.m */; };
-		EAEA32DA152202C9009CF455 /* TLTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EAEA32D9152202C9009CF455 /* TLTAppDelegate.m */; };
-		EAEA32DD152202C9009CF455 /* TLTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAEA32DC152202C9009CF455 /* TLTViewController.m */; };
-		EAEA32E0152202C9009CF455 /* TLTViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAEA32DE152202C9009CF455 /* TLTViewController_iPhone.xib */; };
-		EAEA32E3152202C9009CF455 /* TLTViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAEA32E1152202C9009CF455 /* TLTViewController_iPad.xib */; };
+		092811AB152DB2DF002240D2 /* calculator.png in Resources */ = {isa = PBXBuildFile; fileRef = 092811A3152DB2DF002240D2 /* calculator.png */; };
+		092811AC152DB2DF002240D2 /* calculator@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 092811A4152DB2DF002240D2 /* calculator@2x.png */; };
+		092811AD152DB2DF002240D2 /* calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = 092811A5152DB2DF002240D2 /* calendar.png */; };
+		092811AE152DB2DF002240D2 /* calendar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 092811A6152DB2DF002240D2 /* calendar@2x.png */; };
+		092811AF152DB2DF002240D2 /* contact.png in Resources */ = {isa = PBXBuildFile; fileRef = 092811A7152DB2DF002240D2 /* contact.png */; };
+		092811B0152DB2DF002240D2 /* contact@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 092811A8152DB2DF002240D2 /* contact@2x.png */; };
+		092811B1152DB2DF002240D2 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 092811A9152DB2DF002240D2 /* settings.png */; };
+		092811B2152DB2DF002240D2 /* settings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 092811AA152DB2DF002240D2 /* settings@2x.png */; };
+		0976A7CD1524D36E00B0FBD2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0976A7CC1524D36E00B0FBD2 /* UIKit.framework */; };
+		0976A7CF1524D36E00B0FBD2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0976A7CE1524D36E00B0FBD2 /* Foundation.framework */; };
+		0976A7D11524D36E00B0FBD2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0976A7D01524D36E00B0FBD2 /* CoreGraphics.framework */; };
+		0976A7D71524D36E00B0FBD2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0976A7D51524D36E00B0FBD2 /* InfoPlist.strings */; };
+		0976A7D91524D36E00B0FBD2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0976A7D81524D36E00B0FBD2 /* main.m */; };
+		0976A7DD1524D36E00B0FBD2 /* TLTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0976A7DC1524D36E00B0FBD2 /* TLTAppDelegate.m */; };
+		0976A7E01524D36E00B0FBD2 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0976A7DE1524D36E00B0FBD2 /* MainStoryboard_iPhone.storyboard */; };
+		0976A7E61524D36E00B0FBD2 /* CalculatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0976A7E51524D36E00B0FBD2 /* CalculatorViewController.m */; };
+		09A412F3152DB6AD0038CC28 /* ContactNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A412F2152DB6AD0038CC28 /* ContactNavViewController.m */; };
+		09A412F6152DB7D40038CC28 /* ContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A412F5152DB7D40038CC28 /* ContactViewController.m */; };
+		09A41304152DE7FD0038CC28 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 09A41302152DE7FD0038CC28 /* icon.png */; };
+		09A41305152DE7FD0038CC28 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 09A41303152DE7FD0038CC28 /* icon@2x.png */; };
+		09A41308152DE86B0038CC28 /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A41307152DE86B0038CC28 /* Contact.m */; };
+		09A4130B152DE9750038CC28 /* ContactDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A4130A152DE9750038CC28 /* ContactDetailsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		EAEA32C5152202C9009CF455 /* TLTWorkshop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TLTWorkshop.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		EAEA32C9152202C9009CF455 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		EAEA32CB152202C9009CF455 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		EAEA32CD152202C9009CF455 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		EAEA32D1152202C9009CF455 /* TLTWorkshop-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TLTWorkshop-Info.plist"; sourceTree = "<group>"; };
-		EAEA32D3152202C9009CF455 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		EAEA32D5152202C9009CF455 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		EAEA32D7152202C9009CF455 /* TLTWorkshop-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TLTWorkshop-Prefix.pch"; sourceTree = "<group>"; };
-		EAEA32D8152202C9009CF455 /* TLTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLTAppDelegate.h; sourceTree = "<group>"; };
-		EAEA32D9152202C9009CF455 /* TLTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLTAppDelegate.m; sourceTree = "<group>"; };
-		EAEA32DB152202C9009CF455 /* TLTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLTViewController.h; sourceTree = "<group>"; };
-		EAEA32DC152202C9009CF455 /* TLTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLTViewController.m; sourceTree = "<group>"; };
-		EAEA32DF152202C9009CF455 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/TLTViewController_iPhone.xib; sourceTree = "<group>"; };
-		EAEA32E2152202C9009CF455 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/TLTViewController_iPad.xib; sourceTree = "<group>"; };
+		092811A3152DB2DF002240D2 /* calculator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = calculator.png; path = Resources/Images/calculator.png; sourceTree = "<group>"; };
+		092811A4152DB2DF002240D2 /* calculator@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "calculator@2x.png"; path = "Resources/Images/calculator@2x.png"; sourceTree = "<group>"; };
+		092811A5152DB2DF002240D2 /* calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = calendar.png; path = Resources/Images/calendar.png; sourceTree = "<group>"; };
+		092811A6152DB2DF002240D2 /* calendar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "calendar@2x.png"; path = "Resources/Images/calendar@2x.png"; sourceTree = "<group>"; };
+		092811A7152DB2DF002240D2 /* contact.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = contact.png; path = Resources/Images/contact.png; sourceTree = "<group>"; };
+		092811A8152DB2DF002240D2 /* contact@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "contact@2x.png"; path = "Resources/Images/contact@2x.png"; sourceTree = "<group>"; };
+		092811A9152DB2DF002240D2 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = settings.png; path = Resources/Images/settings.png; sourceTree = "<group>"; };
+		092811AA152DB2DF002240D2 /* settings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "settings@2x.png"; path = "Resources/Images/settings@2x.png"; sourceTree = "<group>"; };
+		0976A7C81524D36E00B0FBD2 /* tltworkshop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tltworkshop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0976A7CC1524D36E00B0FBD2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0976A7CE1524D36E00B0FBD2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0976A7D01524D36E00B0FBD2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0976A7D41524D36E00B0FBD2 /* tltworkshop-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "tltworkshop-Info.plist"; sourceTree = "<group>"; };
+		0976A7D61524D36E00B0FBD2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0976A7D81524D36E00B0FBD2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0976A7DA1524D36E00B0FBD2 /* tltworkshop-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "tltworkshop-Prefix.pch"; sourceTree = "<group>"; };
+		0976A7DB1524D36E00B0FBD2 /* TLTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLTAppDelegate.h; sourceTree = "<group>"; };
+		0976A7DC1524D36E00B0FBD2 /* TLTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLTAppDelegate.m; sourceTree = "<group>"; };
+		0976A7DF1524D36E00B0FBD2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		0976A7E41524D36E00B0FBD2 /* CalculatorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalculatorViewController.h; sourceTree = "<group>"; };
+		0976A7E51524D36E00B0FBD2 /* CalculatorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalculatorViewController.m; sourceTree = "<group>"; };
+		09A412F1152DB6AD0038CC28 /* ContactNavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactNavViewController.h; sourceTree = "<group>"; };
+		09A412F2152DB6AD0038CC28 /* ContactNavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactNavViewController.m; sourceTree = "<group>"; };
+		09A412F4152DB7D40038CC28 /* ContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactViewController.h; sourceTree = "<group>"; };
+		09A412F5152DB7D40038CC28 /* ContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactViewController.m; sourceTree = "<group>"; };
+		09A41302152DE7FD0038CC28 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = Resources/Images/icon.png; sourceTree = "<group>"; };
+		09A41303152DE7FD0038CC28 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon@2x.png"; path = "Resources/Images/icon@2x.png"; sourceTree = "<group>"; };
+		09A41306152DE86B0038CC28 /* Contact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contact.h; sourceTree = "<group>"; };
+		09A41307152DE86B0038CC28 /* Contact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contact.m; sourceTree = "<group>"; };
+		09A41309152DE9750038CC28 /* ContactDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactDetailsViewController.h; sourceTree = "<group>"; };
+		09A4130A152DE9750038CC28 /* ContactDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactDetailsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		EAEA32C2152202C9009CF455 /* Frameworks */ = {
+		0976A7C51524D36E00B0FBD2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EAEA32CA152202C9009CF455 /* UIKit.framework in Frameworks */,
-				EAEA32CC152202C9009CF455 /* Foundation.framework in Frameworks */,
-				EAEA32CE152202C9009CF455 /* CoreGraphics.framework in Frameworks */,
+				0976A7CD1524D36E00B0FBD2 /* UIKit.framework in Frameworks */,
+				0976A7CF1524D36E00B0FBD2 /* Foundation.framework in Frameworks */,
+				0976A7D11524D36E00B0FBD2 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		EAEA32BA152202C7009CF455 = {
+		092811A2152DB2BB002240D2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				EAEA32CF152202C9009CF455 /* TLTWorkshop */,
-				EAEA32C8152202C9009CF455 /* Frameworks */,
-				EAEA32C6152202C9009CF455 /* Products */,
+				09A412FD152DDB920038CC28 /* Data */,
+				092811B3152DB2E9002240D2 /* Images */,
+				09AA4D97152E0D82005A609A /* UI */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		092811B3152DB2E9002240D2 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				092811A3152DB2DF002240D2 /* calculator.png */,
+				092811A4152DB2DF002240D2 /* calculator@2x.png */,
+				092811A5152DB2DF002240D2 /* calendar.png */,
+				092811A6152DB2DF002240D2 /* calendar@2x.png */,
+				092811A7152DB2DF002240D2 /* contact.png */,
+				092811A8152DB2DF002240D2 /* contact@2x.png */,
+				09A41302152DE7FD0038CC28 /* icon.png */,
+				09A41303152DE7FD0038CC28 /* icon@2x.png */,
+				092811A9152DB2DF002240D2 /* settings.png */,
+				092811AA152DB2DF002240D2 /* settings@2x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		0976A7BD1524D36D00B0FBD2 = {
+			isa = PBXGroup;
+			children = (
+				0976A7D21524D36E00B0FBD2 /* tltworkshop */,
+				0976A7CB1524D36E00B0FBD2 /* Frameworks */,
+				0976A7C91524D36E00B0FBD2 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		EAEA32C6152202C9009CF455 /* Products */ = {
+		0976A7C91524D36E00B0FBD2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EAEA32C5152202C9009CF455 /* TLTWorkshop.app */,
+				0976A7C81524D36E00B0FBD2 /* tltworkshop.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EAEA32C8152202C9009CF455 /* Frameworks */ = {
+		0976A7CB1524D36E00B0FBD2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				EAEA32C9152202C9009CF455 /* UIKit.framework */,
-				EAEA32CB152202C9009CF455 /* Foundation.framework */,
-				EAEA32CD152202C9009CF455 /* CoreGraphics.framework */,
+				0976A7CC1524D36E00B0FBD2 /* UIKit.framework */,
+				0976A7CE1524D36E00B0FBD2 /* Foundation.framework */,
+				0976A7D01524D36E00B0FBD2 /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		EAEA32CF152202C9009CF455 /* TLTWorkshop */ = {
+		0976A7D21524D36E00B0FBD2 /* tltworkshop */ = {
 			isa = PBXGroup;
 			children = (
-				EAEA32D8152202C9009CF455 /* TLTAppDelegate.h */,
-				EAEA32D9152202C9009CF455 /* TLTAppDelegate.m */,
-				EAEA32DB152202C9009CF455 /* TLTViewController.h */,
-				EAEA32DC152202C9009CF455 /* TLTViewController.m */,
-				EAEA32DE152202C9009CF455 /* TLTViewController_iPhone.xib */,
-				EAEA32E1152202C9009CF455 /* TLTViewController_iPad.xib */,
-				EAEA32D0152202C9009CF455 /* Supporting Files */,
+				0976A7DB1524D36E00B0FBD2 /* TLTAppDelegate.h */,
+				0976A7DC1524D36E00B0FBD2 /* TLTAppDelegate.m */,
+				0976A7E41524D36E00B0FBD2 /* CalculatorViewController.h */,
+				0976A7E51524D36E00B0FBD2 /* CalculatorViewController.m */,
+				09A41306152DE86B0038CC28 /* Contact.h */,
+				09A41307152DE86B0038CC28 /* Contact.m */,
+				09A41309152DE9750038CC28 /* ContactDetailsViewController.h */,
+				09A4130A152DE9750038CC28 /* ContactDetailsViewController.m */,
+				09A412F1152DB6AD0038CC28 /* ContactNavViewController.h */,
+				09A412F2152DB6AD0038CC28 /* ContactNavViewController.m */,
+				09A412F4152DB7D40038CC28 /* ContactViewController.h */,
+				09A412F5152DB7D40038CC28 /* ContactViewController.m */,
+				0976A7D31524D36E00B0FBD2 /* Supporting Files */,
+				092811A2152DB2BB002240D2 /* Resources */,
 			);
-			path = TLTWorkshop;
+			path = tltworkshop;
 			sourceTree = "<group>";
 		};
-		EAEA32D0152202C9009CF455 /* Supporting Files */ = {
+		0976A7D31524D36E00B0FBD2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				EAEA32D1152202C9009CF455 /* TLTWorkshop-Info.plist */,
-				EAEA32D2152202C9009CF455 /* InfoPlist.strings */,
-				EAEA32D5152202C9009CF455 /* main.m */,
-				EAEA32D7152202C9009CF455 /* TLTWorkshop-Prefix.pch */,
+				0976A7D41524D36E00B0FBD2 /* tltworkshop-Info.plist */,
+				0976A7D51524D36E00B0FBD2 /* InfoPlist.strings */,
+				0976A7D81524D36E00B0FBD2 /* main.m */,
+				0976A7DA1524D36E00B0FBD2 /* tltworkshop-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		09A412FD152DDB920038CC28 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		09AA4D97152E0D82005A609A /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				0976A7DE1524D36E00B0FBD2 /* MainStoryboard_iPhone.storyboard */,
+			);
+			name = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EAEA32C4152202C9009CF455 /* TLTWorkshop */ = {
+		0976A7C71524D36E00B0FBD2 /* tltworkshop */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EAEA32E6152202C9009CF455 /* Build configuration list for PBXNativeTarget "TLTWorkshop" */;
+			buildConfigurationList = 0976A7F41524D36E00B0FBD2 /* Build configuration list for PBXNativeTarget "tltworkshop" */;
 			buildPhases = (
-				EAEA32C1152202C9009CF455 /* Sources */,
-				EAEA32C2152202C9009CF455 /* Frameworks */,
-				EAEA32C3152202C9009CF455 /* Resources */,
+				0976A7C41524D36E00B0FBD2 /* Sources */,
+				0976A7C51524D36E00B0FBD2 /* Frameworks */,
+				0976A7C61524D36E00B0FBD2 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = TLTWorkshop;
-			productName = TLTWorkshop;
-			productReference = EAEA32C5152202C9009CF455 /* TLTWorkshop.app */;
+			name = tltworkshop;
+			productName = tltworkshop;
+			productReference = 0976A7C81524D36E00B0FBD2 /* tltworkshop.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		EAEA32BC152202C7009CF455 /* Project object */ = {
+		0976A7BF1524D36D00B0FBD2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = TLT;
-				LastUpgradeCheck = 0430;
+				LastUpgradeCheck = 0420;
 			};
-			buildConfigurationList = EAEA32BF152202C7009CF455 /* Build configuration list for PBXProject "TLTWorkshop" */;
+			buildConfigurationList = 0976A7C21524D36E00B0FBD2 /* Build configuration list for PBXProject "TLTWorkshop" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = EAEA32BA152202C7009CF455;
-			productRefGroup = EAEA32C6152202C9009CF455 /* Products */;
+			mainGroup = 0976A7BD1524D36D00B0FBD2;
+			productRefGroup = 0976A7C91524D36E00B0FBD2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EAEA32C4152202C9009CF455 /* TLTWorkshop */,
+				0976A7C71524D36E00B0FBD2 /* tltworkshop */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		EAEA32C3152202C9009CF455 /* Resources */ = {
+		0976A7C61524D36E00B0FBD2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EAEA32D4152202C9009CF455 /* InfoPlist.strings in Resources */,
-				EAEA32E0152202C9009CF455 /* TLTViewController_iPhone.xib in Resources */,
-				EAEA32E3152202C9009CF455 /* TLTViewController_iPad.xib in Resources */,
+				0976A7D71524D36E00B0FBD2 /* InfoPlist.strings in Resources */,
+				0976A7E01524D36E00B0FBD2 /* MainStoryboard_iPhone.storyboard in Resources */,
+				092811AB152DB2DF002240D2 /* calculator.png in Resources */,
+				092811AC152DB2DF002240D2 /* calculator@2x.png in Resources */,
+				092811AD152DB2DF002240D2 /* calendar.png in Resources */,
+				092811AE152DB2DF002240D2 /* calendar@2x.png in Resources */,
+				092811AF152DB2DF002240D2 /* contact.png in Resources */,
+				092811B0152DB2DF002240D2 /* contact@2x.png in Resources */,
+				092811B1152DB2DF002240D2 /* settings.png in Resources */,
+				092811B2152DB2DF002240D2 /* settings@2x.png in Resources */,
+				09A41304152DE7FD0038CC28 /* icon.png in Resources */,
+				09A41305152DE7FD0038CC28 /* icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		EAEA32C1152202C9009CF455 /* Sources */ = {
+		0976A7C41524D36E00B0FBD2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EAEA32D6152202C9009CF455 /* main.m in Sources */,
-				EAEA32DA152202C9009CF455 /* TLTAppDelegate.m in Sources */,
-				EAEA32DD152202C9009CF455 /* TLTViewController.m in Sources */,
+				0976A7D91524D36E00B0FBD2 /* main.m in Sources */,
+				0976A7DD1524D36E00B0FBD2 /* TLTAppDelegate.m in Sources */,
+				0976A7E61524D36E00B0FBD2 /* CalculatorViewController.m in Sources */,
+				09A412F3152DB6AD0038CC28 /* ContactNavViewController.m in Sources */,
+				09A412F6152DB7D40038CC28 /* ContactViewController.m in Sources */,
+				09A41308152DE86B0038CC28 /* Contact.m in Sources */,
+				09A4130B152DE9750038CC28 /* ContactDetailsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		EAEA32D2152202C9009CF455 /* InfoPlist.strings */ = {
+		0976A7D51524D36E00B0FBD2 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				EAEA32D3152202C9009CF455 /* en */,
+				0976A7D61524D36E00B0FBD2 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		EAEA32DE152202C9009CF455 /* TLTViewController_iPhone.xib */ = {
+		0976A7DE1524D36E00B0FBD2 /* MainStoryboard_iPhone.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				EAEA32DF152202C9009CF455 /* en */,
+				0976A7DF1524D36E00B0FBD2 /* en */,
 			);
-			name = TLTViewController_iPhone.xib;
-			sourceTree = "<group>";
-		};
-		EAEA32E1152202C9009CF455 /* TLTViewController_iPad.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EAEA32E2152202C9009CF455 /* en */,
-			);
-			name = TLTViewController_iPad.xib;
+			name = MainStoryboard_iPhone.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		EAEA32E4152202C9009CF455 /* Debug */ = {
+		0976A7F21524D36E00B0FBD2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -217,28 +301,29 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		EAEA32E5152202C9009CF455 /* Release */ = {
+		0976A7F31524D36E00B0FBD2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -246,24 +331,26 @@
 			};
 			name = Release;
 		};
-		EAEA32E7152202C9009CF455 /* Debug */ = {
+		0976A7F51524D36E00B0FBD2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TLTWorkshop/TLTWorkshop-Prefix.pch";
-				INFOPLIST_FILE = "TLTWorkshop/TLTWorkshop-Info.plist";
+				GCC_PREFIX_HEADER = "tltworkshop/tltworkshop-Prefix.pch";
+				INFOPLIST_FILE = "tltworkshop/tltworkshop-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
-		EAEA32E8152202C9009CF455 /* Release */ = {
+		0976A7F61524D36E00B0FBD2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TLTWorkshop/TLTWorkshop-Prefix.pch";
-				INFOPLIST_FILE = "TLTWorkshop/TLTWorkshop-Info.plist";
+				GCC_PREFIX_HEADER = "tltworkshop/tltworkshop-Prefix.pch";
+				INFOPLIST_FILE = "tltworkshop/tltworkshop-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -271,24 +358,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EAEA32BF152202C7009CF455 /* Build configuration list for PBXProject "TLTWorkshop" */ = {
+		0976A7C21524D36E00B0FBD2 /* Build configuration list for PBXProject "TLTWorkshop" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EAEA32E4152202C9009CF455 /* Debug */,
-				EAEA32E5152202C9009CF455 /* Release */,
+				0976A7F21524D36E00B0FBD2 /* Debug */,
+				0976A7F31524D36E00B0FBD2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EAEA32E6152202C9009CF455 /* Build configuration list for PBXNativeTarget "TLTWorkshop" */ = {
+		0976A7F41524D36E00B0FBD2 /* Build configuration list for PBXNativeTarget "tltworkshop" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EAEA32E7152202C9009CF455 /* Debug */,
-				EAEA32E8152202C9009CF455 /* Release */,
+				0976A7F51524D36E00B0FBD2 /* Debug */,
+				0976A7F61524D36E00B0FBD2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = EAEA32BC152202C7009CF455 /* Project object */;
+	rootObject = 0976A7BF1524D36D00B0FBD2 /* Project object */;
 }

@@ -1,5 +1,5 @@
 //
-//  TLTAppDelegate.h
+//  TLTFirstViewController.h
 //  tltworkshop
 //
 //  Created by leaf on 3/30/12.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TLTAppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
+@interface CalculatorViewController : UIViewController
 
 @end
