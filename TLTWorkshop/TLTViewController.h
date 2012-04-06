@@ -9,6 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface TLTViewController : UIViewController
+{
+    IBOutlet UILabel* osd;
+}
 
 -(IBAction)buttonPressed:(id)sender;
 

@@ -7,8 +7,12 @@
 //
 
 #import "TLTViewController.h"
+#import "TLTCalculatorBrain.h"
 
 @interface TLTViewController ()
+{
+    TLTCalculatorBrain* brain;
+}
 
 @end
 
@@ -18,12 +22,15 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    brain = [TLTCalculatorBrain new];
 }
 
 - (void)viewDidUnload
 {
     [super viewDidUnload];
     // Release any retained subviews of the main view.
+    [brain release];
+    osd = nil;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -37,7 +44,20 @@
 
 - (IBAction)buttonPressed:(id)sender
 {
-    NSLog(@"OK");
+    UIButton* button = (UIButton*)sender;
+    NSString* string = button.titleLabel.text;
+    int display = 0;
+    if ([string isEqualToString:@"="]) {
+        display = [brain calculate];
+    }
+    else if ([string isEqualToString:@"+"]) {
+        display = [brain performOperator:Add];
+    }
+    else {
+        int n = [string intValue];
+        display = [brain appendOperand:n];
+    }
+    osd.text = [NSString stringWithFormat:@"%d", display];  
 }
 
 @end

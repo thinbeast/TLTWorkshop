@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EAD17886152E8B7C00C347E4 /* TLTCalculatorBrain.m in Sources */ = {isa = PBXBuildFile; fileRef = EAD17885152E8B7C00C347E4 /* TLTCalculatorBrain.m */; };
 		EAEA32CA152202C9009CF455 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAEA32C9152202C9009CF455 /* UIKit.framework */; };
 		EAEA32CC152202C9009CF455 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAEA32CB152202C9009CF455 /* Foundation.framework */; };
 		EAEA32CE152202C9009CF455 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAEA32CD152202C9009CF455 /* CoreGraphics.framework */; };
@@ -19,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EAD17884152E8B7C00C347E4 /* TLTCalculatorBrain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLTCalculatorBrain.h; sourceTree = "<group>"; };
+		EAD17885152E8B7C00C347E4 /* TLTCalculatorBrain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLTCalculatorBrain.m; sourceTree = "<group>"; };
 		EAEA32C5152202C9009CF455 /* TLTWorkshop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TLTWorkshop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAEA32C9152202C9009CF455 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		EAEA32CB152202C9009CF455 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -49,6 +52,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EAD17880152E8A3100C347E4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EAEA32DB152202C9009CF455 /* TLTViewController.h */,
+				EAEA32DC152202C9009CF455 /* TLTViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		EAD17882152E8A3D00C347E4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EAD17884152E8B7C00C347E4 /* TLTCalculatorBrain.h */,
+				EAD17885152E8B7C00C347E4 /* TLTCalculatorBrain.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		EAD17883152E8A4400C347E4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EAEA32DE152202C9009CF455 /* TLTViewController_iPhone.xib */,
+				EAEA32E1152202C9009CF455 /* TLTViewController_iPad.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		EAEA32BA152202C7009CF455 = {
 			isa = PBXGroup;
 			children = (
@@ -79,12 +109,9 @@
 		EAEA32CF152202C9009CF455 /* TLTWorkshop */ = {
 			isa = PBXGroup;
 			children = (
-				EAEA32D8152202C9009CF455 /* TLTAppDelegate.h */,
-				EAEA32D9152202C9009CF455 /* TLTAppDelegate.m */,
-				EAEA32DB152202C9009CF455 /* TLTViewController.h */,
-				EAEA32DC152202C9009CF455 /* TLTViewController.m */,
-				EAEA32DE152202C9009CF455 /* TLTViewController_iPhone.xib */,
-				EAEA32E1152202C9009CF455 /* TLTViewController_iPad.xib */,
+				EAD17883152E8A4400C347E4 /* View */,
+				EAD17882152E8A3D00C347E4 /* Model */,
+				EAD17880152E8A3100C347E4 /* Controller */,
 				EAEA32D0152202C9009CF455 /* Supporting Files */,
 			);
 			path = TLTWorkshop;
@@ -93,6 +120,8 @@
 		EAEA32D0152202C9009CF455 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EAEA32D8152202C9009CF455 /* TLTAppDelegate.h */,
+				EAEA32D9152202C9009CF455 /* TLTAppDelegate.m */,
 				EAEA32D1152202C9009CF455 /* TLTWorkshop-Info.plist */,
 				EAEA32D2152202C9009CF455 /* InfoPlist.strings */,
 				EAEA32D5152202C9009CF455 /* main.m */,
@@ -168,6 +197,7 @@
 				EAEA32D6152202C9009CF455 /* main.m in Sources */,
 				EAEA32DA152202C9009CF455 /* TLTAppDelegate.m in Sources */,
 				EAEA32DD152202C9009CF455 /* TLTViewController.m in Sources */,
+				EAD17886152E8B7C00C347E4 /* TLTCalculatorBrain.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +317,7 @@
 				EAEA32E8152202C9009CF455 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
