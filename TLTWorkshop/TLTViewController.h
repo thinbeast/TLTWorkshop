@@ -13,6 +13,8 @@
     IBOutlet UILabel* osd;
 }
 
+@property (nonatomic, copy) NSString *brainName;
+
 -(IBAction)buttonPressed:(id)sender;
 
 @end
