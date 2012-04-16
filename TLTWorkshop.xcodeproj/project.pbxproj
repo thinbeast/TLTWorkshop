@@ -29,6 +29,8 @@
 		09A41305152DE7FD0038CC28 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 09A41303152DE7FD0038CC28 /* icon@2x.png */; };
 		09A41308152DE86B0038CC28 /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A41307152DE86B0038CC28 /* Contact.m */; };
 		09A4130B152DE9750038CC28 /* ContactDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A4130A152DE9750038CC28 /* ContactDetailsViewController.m */; };
+		5913022A153C4479003BE45B /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59130229153C4479003BE45B /* SettingsViewController.m */; };
+		5913022D153C4997003BE45B /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5913022C153C4997003BE45B /* TabBarController.m */; };
 		59847C13153C3C420079992D /* contacts.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 59847C12153C3C420079992D /* contacts.sqlite */; };
 		59847C23153C3D480079992D /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 59847C1A153C3D470079992D /* FMDatabase.m */; };
 		59847C24153C3D480079992D /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 59847C1C153C3D470079992D /* FMDatabaseAdditions.m */; };
@@ -71,6 +73,10 @@
 		09A41307152DE86B0038CC28 /* Contact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contact.m; sourceTree = "<group>"; };
 		09A41309152DE9750038CC28 /* ContactDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactDetailsViewController.h; sourceTree = "<group>"; };
 		09A4130A152DE9750038CC28 /* ContactDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactDetailsViewController.m; sourceTree = "<group>"; };
+		59130228153C4479003BE45B /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingsViewController.h; path = TLTWorkshop/SettingsViewController.h; sourceTree = SOURCE_ROOT; };
+		59130229153C4479003BE45B /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingsViewController.m; path = TLTWorkshop/SettingsViewController.m; sourceTree = SOURCE_ROOT; };
+		5913022B153C4997003BE45B /* TabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TabBarController.h; path = TLTWorkshop/TabBarController.h; sourceTree = SOURCE_ROOT; };
+		5913022C153C4997003BE45B /* TabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TabBarController.m; path = TLTWorkshop/TabBarController.m; sourceTree = SOURCE_ROOT; };
 		59847C12153C3C420079992D /* contacts.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; name = contacts.sqlite; path = TLTWorkshop/data/contacts.sqlite; sourceTree = SOURCE_ROOT; };
 		59847C19153C3D470079992D /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabase.h; path = TLTWorkshop/fmdb/FMDatabase.h; sourceTree = SOURCE_ROOT; };
 		59847C1A153C3D470079992D /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabase.m; path = TLTWorkshop/fmdb/FMDatabase.m; sourceTree = SOURCE_ROOT; };
@@ -165,10 +171,14 @@
 				0976A7E41524D36E00B0FBD2 /* CalculatorViewController.h */,
 				0976A7E51524D36E00B0FBD2 /* CalculatorViewController.m */,
 				09A41306152DE86B0038CC28 /* Contact.h */,
+				59130228153C4479003BE45B /* SettingsViewController.h */,
+				59130229153C4479003BE45B /* SettingsViewController.m */,
 				09A41307152DE86B0038CC28 /* Contact.m */,
 				09A41309152DE9750038CC28 /* ContactDetailsViewController.h */,
 				09A4130A152DE9750038CC28 /* ContactDetailsViewController.m */,
 				09A412F1152DB6AD0038CC28 /* ContactNavViewController.h */,
+				5913022B153C4997003BE45B /* TabBarController.h */,
+				5913022C153C4997003BE45B /* TabBarController.m */,
 				09A412F2152DB6AD0038CC28 /* ContactNavViewController.m */,
 				09A412F4152DB7D40038CC28 /* ContactViewController.h */,
 				09A412F5152DB7D40038CC28 /* ContactViewController.m */,
@@ -309,6 +319,8 @@
 				59847C25153C3D480079992D /* FMDatabasePool.m in Sources */,
 				59847C26153C3D480079992D /* FMDatabaseQueue.m in Sources */,
 				59847C27153C3D480079992D /* FMResultSet.m in Sources */,
+				5913022A153C4479003BE45B /* SettingsViewController.m in Sources */,
+				5913022D153C4997003BE45B /* TabBarController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
