@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DCA92E18153800FE0007B2CA /* RandomBrain.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA92E17153800FE0007B2CA /* RandomBrain.m */; };
 		EAD17886152E8B7C00C347E4 /* TLTCalculatorBrain.m in Sources */ = {isa = PBXBuildFile; fileRef = EAD17885152E8B7C00C347E4 /* TLTCalculatorBrain.m */; };
 		EAEA32CA152202C9009CF455 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAEA32C9152202C9009CF455 /* UIKit.framework */; };
 		EAEA32CC152202C9009CF455 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAEA32CB152202C9009CF455 /* Foundation.framework */; };
@@ -20,6 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DCA92E111537EE1F0007B2CA /* CalculatorBrain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculatorBrain.h; sourceTree = "<group>"; };
+		DCA92E16153800FE0007B2CA /* RandomBrain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RandomBrain.h; sourceTree = "<group>"; };
+		DCA92E17153800FE0007B2CA /* RandomBrain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RandomBrain.m; sourceTree = "<group>"; };
 		EAD17884152E8B7C00C347E4 /* TLTCalculatorBrain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLTCalculatorBrain.h; sourceTree = "<group>"; };
 		EAD17885152E8B7C00C347E4 /* TLTCalculatorBrain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLTCalculatorBrain.m; sourceTree = "<group>"; };
 		EAEA32C5152202C9009CF455 /* TLTWorkshop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TLTWorkshop.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,8 +68,11 @@
 		EAD17882152E8A3D00C347E4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DCA92E16153800FE0007B2CA /* RandomBrain.h */,
+				DCA92E17153800FE0007B2CA /* RandomBrain.m */,
 				EAD17884152E8B7C00C347E4 /* TLTCalculatorBrain.h */,
 				EAD17885152E8B7C00C347E4 /* TLTCalculatorBrain.m */,
+				DCA92E111537EE1F0007B2CA /* CalculatorBrain.h */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -198,6 +205,7 @@
 				EAEA32DA152202C9009CF455 /* TLTAppDelegate.m in Sources */,
 				EAEA32DD152202C9009CF455 /* TLTViewController.m in Sources */,
 				EAD17886152E8B7C00C347E4 /* TLTCalculatorBrain.m in Sources */,
+				DCA92E18153800FE0007B2CA /* RandomBrain.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +290,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TLTWorkshop/TLTWorkshop-Prefix.pch";
 				INFOPLIST_FILE = "TLTWorkshop/TLTWorkshop-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -293,6 +302,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TLTWorkshop/TLTWorkshop-Prefix.pch";
 				INFOPLIST_FILE = "TLTWorkshop/TLTWorkshop-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

@@ -50,13 +50,24 @@ enum State
 
 - (void) setOperand:(int)operand
 {
-    _operand = operand;
-    _state = kDigit;
+    _operand = 0;
+    [self appendOperand:operand];
 }
 
 - (int) appendOperand:(int) digit
 {
-    _operand = _operand * 10 + digit;
+    switch (_state) {
+        case kDigit:
+            _operand = _operand * 10 + digit;
+            break;
+        case kCalculate:
+            _operator = kNoop;
+            /* Fall through */
+        default:
+            _operand = digit;
+            break;
+    }
+
     _state = kDigit;
     return _operand;
 }

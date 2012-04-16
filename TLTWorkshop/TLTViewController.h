@@ -13,6 +13,8 @@
     IBOutlet UITextField* osd;
 }
 
+@property (nonatomic, copy) NSString *brainName;
+
 -(IBAction)buttonPressed:(id)sender;
 
 @end
