@@ -10,6 +10,6 @@
 
 @implementation Contact
 
-@synthesize firstName, lastName, address, phone, mobile, email;
+@synthesize contactId, firstName, lastName, address, phone, mobile, email;
 
 @end

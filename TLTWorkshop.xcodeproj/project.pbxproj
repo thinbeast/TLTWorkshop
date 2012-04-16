@@ -29,6 +29,13 @@
 		09A41305152DE7FD0038CC28 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 09A41303152DE7FD0038CC28 /* icon@2x.png */; };
 		09A41308152DE86B0038CC28 /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A41307152DE86B0038CC28 /* Contact.m */; };
 		09A4130B152DE9750038CC28 /* ContactDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A4130A152DE9750038CC28 /* ContactDetailsViewController.m */; };
+		59847C13153C3C420079992D /* contacts.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 59847C12153C3C420079992D /* contacts.sqlite */; };
+		59847C23153C3D480079992D /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 59847C1A153C3D470079992D /* FMDatabase.m */; };
+		59847C24153C3D480079992D /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 59847C1C153C3D470079992D /* FMDatabaseAdditions.m */; };
+		59847C25153C3D480079992D /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 59847C1E153C3D470079992D /* FMDatabasePool.m */; };
+		59847C26153C3D480079992D /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 59847C20153C3D480079992D /* FMDatabaseQueue.m */; };
+		59847C27153C3D480079992D /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 59847C22153C3D480079992D /* FMResultSet.m */; };
+		59847C2A153C3EDB0079992D /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 59847C29153C3EDB0079992D /* libsqlite3.0.dylib */; };
 		59FB9DD4153C35F60000A7E0 /* contacts.plist in Resources */ = {isa = PBXBuildFile; fileRef = 59FB9DD3153C35F60000A7E0 /* contacts.plist */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +71,18 @@
 		09A41307152DE86B0038CC28 /* Contact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contact.m; sourceTree = "<group>"; };
 		09A41309152DE9750038CC28 /* ContactDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactDetailsViewController.h; sourceTree = "<group>"; };
 		09A4130A152DE9750038CC28 /* ContactDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactDetailsViewController.m; sourceTree = "<group>"; };
+		59847C12153C3C420079992D /* contacts.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; name = contacts.sqlite; path = TLTWorkshop/data/contacts.sqlite; sourceTree = SOURCE_ROOT; };
+		59847C19153C3D470079992D /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabase.h; path = TLTWorkshop/fmdb/FMDatabase.h; sourceTree = SOURCE_ROOT; };
+		59847C1A153C3D470079992D /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabase.m; path = TLTWorkshop/fmdb/FMDatabase.m; sourceTree = SOURCE_ROOT; };
+		59847C1B153C3D470079992D /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabaseAdditions.h; path = TLTWorkshop/fmdb/FMDatabaseAdditions.h; sourceTree = SOURCE_ROOT; };
+		59847C1C153C3D470079992D /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseAdditions.m; path = TLTWorkshop/fmdb/FMDatabaseAdditions.m; sourceTree = SOURCE_ROOT; };
+		59847C1D153C3D470079992D /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabasePool.h; path = TLTWorkshop/fmdb/FMDatabasePool.h; sourceTree = SOURCE_ROOT; };
+		59847C1E153C3D470079992D /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabasePool.m; path = TLTWorkshop/fmdb/FMDatabasePool.m; sourceTree = SOURCE_ROOT; };
+		59847C1F153C3D470079992D /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabaseQueue.h; path = TLTWorkshop/fmdb/FMDatabaseQueue.h; sourceTree = SOURCE_ROOT; };
+		59847C20153C3D480079992D /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseQueue.m; path = TLTWorkshop/fmdb/FMDatabaseQueue.m; sourceTree = SOURCE_ROOT; };
+		59847C21153C3D480079992D /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMResultSet.h; path = TLTWorkshop/fmdb/FMResultSet.h; sourceTree = SOURCE_ROOT; };
+		59847C22153C3D480079992D /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMResultSet.m; path = TLTWorkshop/fmdb/FMResultSet.m; sourceTree = SOURCE_ROOT; };
+		59847C29153C3EDB0079992D /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		59FB9DD3153C35F60000A7E0 /* contacts.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = contacts.plist; path = TLTWorkshop/data/contacts.plist; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -72,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59847C2A153C3EDB0079992D /* libsqlite3.0.dylib in Frameworks */,
 				0976A7CD1524D36E00B0FBD2 /* UIKit.framework in Frameworks */,
 				0976A7CF1524D36E00B0FBD2 /* Foundation.framework in Frameworks */,
 				0976A7D11524D36E00B0FBD2 /* CoreGraphics.framework in Frameworks */,
@@ -111,6 +131,7 @@
 		0976A7BD1524D36D00B0FBD2 = {
 			isa = PBXGroup;
 			children = (
+				59847C29153C3EDB0079992D /* libsqlite3.0.dylib */,
 				0976A7D21524D36E00B0FBD2 /* tltworkshop */,
 				0976A7CB1524D36E00B0FBD2 /* Frameworks */,
 				0976A7C91524D36E00B0FBD2 /* Products */,
@@ -138,6 +159,7 @@
 		0976A7D21524D36E00B0FBD2 /* tltworkshop */ = {
 			isa = PBXGroup;
 			children = (
+				59847C28153C3D4C0079992D /* fmdb */,
 				0976A7DB1524D36E00B0FBD2 /* TLTAppDelegate.h */,
 				0976A7DC1524D36E00B0FBD2 /* TLTAppDelegate.m */,
 				0976A7E41524D36E00B0FBD2 /* CalculatorViewController.h */,
@@ -170,6 +192,7 @@
 		09A412FD152DDB920038CC28 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				59847C12153C3C420079992D /* contacts.sqlite */,
 				59FB9DD3153C35F60000A7E0 /* contacts.plist */,
 			);
 			name = Data;
@@ -181,6 +204,23 @@
 				0976A7DE1524D36E00B0FBD2 /* MainStoryboard_iPhone.storyboard */,
 			);
 			name = UI;
+			sourceTree = "<group>";
+		};
+		59847C28153C3D4C0079992D /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				59847C19153C3D470079992D /* FMDatabase.h */,
+				59847C1A153C3D470079992D /* FMDatabase.m */,
+				59847C1B153C3D470079992D /* FMDatabaseAdditions.h */,
+				59847C1C153C3D470079992D /* FMDatabaseAdditions.m */,
+				59847C1D153C3D470079992D /* FMDatabasePool.h */,
+				59847C1E153C3D470079992D /* FMDatabasePool.m */,
+				59847C1F153C3D470079992D /* FMDatabaseQueue.h */,
+				59847C20153C3D480079992D /* FMDatabaseQueue.m */,
+				59847C21153C3D480079992D /* FMResultSet.h */,
+				59847C22153C3D480079992D /* FMResultSet.m */,
+			);
+			name = fmdb;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,6 +286,7 @@
 				09A41304152DE7FD0038CC28 /* icon.png in Resources */,
 				09A41305152DE7FD0038CC28 /* icon@2x.png in Resources */,
 				59FB9DD4153C35F60000A7E0 /* contacts.plist in Resources */,
+				59847C13153C3C420079992D /* contacts.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +304,11 @@
 				09A412F6152DB7D40038CC28 /* ContactViewController.m in Sources */,
 				09A41308152DE86B0038CC28 /* Contact.m in Sources */,
 				09A4130B152DE9750038CC28 /* ContactDetailsViewController.m in Sources */,
+				59847C23153C3D480079992D /* FMDatabase.m in Sources */,
+				59847C24153C3D480079992D /* FMDatabaseAdditions.m in Sources */,
+				59847C25153C3D480079992D /* FMDatabasePool.m in Sources */,
+				59847C26153C3D480079992D /* FMDatabaseQueue.m in Sources */,
+				59847C27153C3D480079992D /* FMResultSet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

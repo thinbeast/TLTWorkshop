@@ -11,6 +11,7 @@
 
 @interface Contact : NSObject {
 @private
+    NSNumber* contactId;
     NSString* firstName;
     NSString* lastName;
     NSString* address;
@@ -19,6 +20,7 @@
     NSString* email;
 }
 
+@property (strong) NSNumber* contactId;
 @property (strong) NSString* firstName;
 @property (strong) NSString* lastName;
 @property (strong) NSString* address;

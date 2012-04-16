@@ -9,10 +9,12 @@
 #import "ContactViewController.h"
 #import "ContactDetailsViewController.h"
 #import "Contact.h"
+#import "FMDatabase.h"
+#import "FMResultSet.h"
 
 @implementation ContactViewController
 
-@synthesize contacts;
+@synthesize contacts, contactsDb;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -40,7 +42,7 @@
     //Expand any tildes and identify home directories.
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory , NSUserDomainMask, YES);
     NSString *documentsDir = [paths objectAtIndex:0];
-    return [documentsDir stringByAppendingPathComponent:@"contacts.plist"];
+    return [documentsDir stringByAppendingPathComponent:@"contacts.sqlite"];
 }
 
 - (void) copyDatabaseIfNeeded {
@@ -49,7 +51,7 @@
     BOOL success = [fileManager fileExistsAtPath:dbPath];
     if(!success) {
         NSError *error;
-        NSString *defaultDBPath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"contacts.plist"];
+        NSString *defaultDBPath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"contacts.sqlite"];
         success = [fileManager copyItemAtPath:defaultDBPath toPath:dbPath error:&error];
         if (!success)
             NSAssert1(0, @"Failed to create writable database file with message '%@'.", [error localizedDescription]);
@@ -57,51 +59,24 @@
 }
 
 - (NSMutableArray*) allContacts{
-    NSData *plistXML = [[NSFileManager defaultManager] contentsAtPath:[self getDBPath]];
-    NSString *errorDesc = nil;
-    NSPropertyListFormat format;
-    NSDictionary *temp = (NSDictionary *)[NSPropertyListSerialization
-                                          propertyListFromData:plistXML
-                                          mutabilityOption:NSPropertyListMutableContainersAndLeaves
-                                          format:&format
-                                          errorDescription:&errorDesc];
-    if (!temp) {
-        NSLog(@"Error reading plist: %@, format: %d", errorDesc, format);
-    }
-    NSArray* contactsItem = (NSArray*) [temp objectForKey:@"contacts"];
+    FMResultSet *s = [contactsDb executeQuery:@"SELECT * FROM contacts"];
     NSMutableArray *newContacts = [[NSMutableArray alloc] init];
-    NSInteger i, count = [contactsItem count];
-    for (i = 0; i < count; i++)
+    while ([s next])
     {
-        NSDictionary* contactItem = (NSDictionary*) [contactsItem objectAtIndex:i];
         Contact *contact = [[Contact alloc] init];
-        contact.firstName = [contactItem objectForKey:@"firstName"];
-        contact.lastName = [contactItem objectForKey:@"lastName"];
-        contact.address = [contactItem objectForKey:@"address"];
-        contact.phone = [contactItem objectForKey:@"phone"];
-        contact.mobile = [contactItem objectForKey:@"mobile"];
-        contact.email = [contactItem objectForKey:@"email"];
+        contact.firstName = [s stringForColumn:@"firstName"];
+        contact.lastName = [s stringForColumn:@"lastName"];
+        contact.address = [s stringForColumn:@"address"];
+        contact.phone = [s stringForColumn:@"phone"];
+        contact.mobile = [s stringForColumn:@"mobile"];
+        contact.email = [s stringForColumn:@"email"];
+        contact.contactId = [NSNumber numberWithInt:[s intForColumn:@"id"]];
         [newContacts addObject:contact];
     }
     return newContacts;
 }
-
--(void) saveContacts{
-        NSMutableArray *contactsArray = [[NSMutableArray alloc] init];
-        for (Contact* c in contacts)
-        {
-            NSDictionary* dictContact = [NSMutableDictionary dictionaryWithObjectsAndKeys: c.firstName, @"firstName", 
-                                         c.lastName, @"lastName",
-                                         c.address, @"address",
-                                         c.phone, @"phone",
-                                         c.mobile, @"mobile",
-                                         c.email, @"email",
-                                         nil];
-            [contactsArray addObject:dictContact];
-            
-        }
-        NSDictionary* contactsItem = [NSDictionary dictionaryWithObject:contactsArray forKey:@"contacts"];
-        [contactsItem writeToFile:[self getDBPath] atomically:YES];
+- (void) deleteContact:(Contact*) contact{
+    [contactsDb executeUpdate:@"delete from contacts where id = ?", contact.contactId];
 }
 #pragma mark - View lifecycle
 
@@ -111,6 +86,10 @@
     // make sure the contacts file exists.
     //
     [self copyDatabaseIfNeeded];
+    self.contactsDb = [FMDatabase databaseWithPath:[self getDBPath]];
+    if (![contactsDb open]) { 
+        NSAssert(0, @"Failed to open database!");
+    }
     self.contacts = [self allContacts];
 
     [super viewDidLoad];
@@ -199,8 +178,8 @@
 {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         // Delete the row from the data source
+        [self deleteContact:[self.contacts objectAtIndex:indexPath.row]];
         [contacts removeObjectAtIndex:indexPath.row];
-        [self saveContacts];
         [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
     }   
     else if (editingStyle == UITableViewCellEditingStyleInsert) {
