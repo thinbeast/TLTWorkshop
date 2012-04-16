@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>contacts</key>
+	<array>
+		<dict>
+			<key>firstName</key>
+			<string>Leaf</string>
+			<key>lastName</key>
+			<string>Li</string>
+			<key>address</key>
+			<string>Pudan Road 399, Shanghai, China</string>
+			<key>phone</key>
+			<string>38653539</string>
+			<key>mobile</key>
+			<string>13918425971</string>
+			<key>email</key>
+			<string>leaf.li@autodesk.com</string>
+		</dict>
+		<dict>
+			<key>firstName</key>
+			<string>Ronnie</string>
+			<key>lastName</key>
+			<string>Xue</string>
+			<key>address</key>
+			<string>Pudan Road 399, Shanghai, China</string>
+			<key>phone</key>
+			<string>38653471</string>
+			<key>mobile</key>
+			<string>xx</string>
+			<key>email</key>
+			<string>ronnie.xue@autodesk.com</string>
+		</dict>
+	</array>
+</dict>
+</plist>

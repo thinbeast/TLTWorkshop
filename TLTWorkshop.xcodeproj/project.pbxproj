@@ -29,6 +29,7 @@
 		09A41305152DE7FD0038CC28 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 09A41303152DE7FD0038CC28 /* icon@2x.png */; };
 		09A41308152DE86B0038CC28 /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A41307152DE86B0038CC28 /* Contact.m */; };
 		09A4130B152DE9750038CC28 /* ContactDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A4130A152DE9750038CC28 /* ContactDetailsViewController.m */; };
+		59FB9DD4153C35F60000A7E0 /* contacts.plist in Resources */ = {isa = PBXBuildFile; fileRef = 59FB9DD3153C35F60000A7E0 /* contacts.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +64,7 @@
 		09A41307152DE86B0038CC28 /* Contact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contact.m; sourceTree = "<group>"; };
 		09A41309152DE9750038CC28 /* ContactDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactDetailsViewController.h; sourceTree = "<group>"; };
 		09A4130A152DE9750038CC28 /* ContactDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactDetailsViewController.m; sourceTree = "<group>"; };
+		59FB9DD3153C35F60000A7E0 /* contacts.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = contacts.plist; path = TLTWorkshop/data/contacts.plist; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +170,7 @@
 		09A412FD152DDB920038CC28 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				59FB9DD3153C35F60000A7E0 /* contacts.plist */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -242,6 +245,7 @@
 				092811B2152DB2DF002240D2 /* settings@2x.png in Resources */,
 				09A41304152DE7FD0038CC28 /* icon.png in Resources */,
 				09A41305152DE7FD0038CC28 /* icon@2x.png in Resources */,
+				59FB9DD4153C35F60000A7E0 /* contacts.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

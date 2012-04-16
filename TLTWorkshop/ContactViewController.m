@@ -31,31 +31,87 @@
     // Release any cached data, images, etc that aren't in use.
 }
 
+
+- (NSString *) getDBPath {
+    
+    //Search for standard documents using NSSearchPathForDirectoriesInDomains
+    //First Param = Searching the documents directory
+    //Second Param = Searching the Users directory and not the System
+    //Expand any tildes and identify home directories.
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory , NSUserDomainMask, YES);
+    NSString *documentsDir = [paths objectAtIndex:0];
+    return [documentsDir stringByAppendingPathComponent:@"contacts.plist"];
+}
+
+- (void) copyDatabaseIfNeeded {
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    NSString *dbPath = [self getDBPath];
+    BOOL success = [fileManager fileExistsAtPath:dbPath];
+    if(!success) {
+        NSError *error;
+        NSString *defaultDBPath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"contacts.plist"];
+        success = [fileManager copyItemAtPath:defaultDBPath toPath:dbPath error:&error];
+        if (!success)
+            NSAssert1(0, @"Failed to create writable database file with message '%@'.", [error localizedDescription]);
+    }
+}
+
+- (NSMutableArray*) allContacts{
+    NSData *plistXML = [[NSFileManager defaultManager] contentsAtPath:[self getDBPath]];
+    NSString *errorDesc = nil;
+    NSPropertyListFormat format;
+    NSDictionary *temp = (NSDictionary *)[NSPropertyListSerialization
+                                          propertyListFromData:plistXML
+                                          mutabilityOption:NSPropertyListMutableContainersAndLeaves
+                                          format:&format
+                                          errorDescription:&errorDesc];
+    if (!temp) {
+        NSLog(@"Error reading plist: %@, format: %d", errorDesc, format);
+    }
+    NSArray* contactsItem = (NSArray*) [temp objectForKey:@"contacts"];
+    NSMutableArray *newContacts = [[NSMutableArray alloc] init];
+    NSInteger i, count = [contactsItem count];
+    for (i = 0; i < count; i++)
+    {
+        NSDictionary* contactItem = (NSDictionary*) [contactsItem objectAtIndex:i];
+        Contact *contact = [[Contact alloc] init];
+        contact.firstName = [contactItem objectForKey:@"firstName"];
+        contact.lastName = [contactItem objectForKey:@"lastName"];
+        contact.address = [contactItem objectForKey:@"address"];
+        contact.phone = [contactItem objectForKey:@"phone"];
+        contact.mobile = [contactItem objectForKey:@"mobile"];
+        contact.email = [contactItem objectForKey:@"email"];
+        [newContacts addObject:contact];
+    }
+    return newContacts;
+}
+
+-(void) saveContacts{
+        NSMutableArray *contactsArray = [[NSMutableArray alloc] init];
+        for (Contact* c in contacts)
+        {
+            NSDictionary* dictContact = [NSMutableDictionary dictionaryWithObjectsAndKeys: c.firstName, @"firstName", 
+                                         c.lastName, @"lastName",
+                                         c.address, @"address",
+                                         c.phone, @"phone",
+                                         c.mobile, @"mobile",
+                                         c.email, @"email",
+                                         nil];
+            [contactsArray addObject:dictContact];
+            
+        }
+        NSDictionary* contactsItem = [NSDictionary dictionaryWithObject:contactsArray forKey:@"contacts"];
+        [contactsItem writeToFile:[self getDBPath] atomically:YES];
+}
 #pragma mark - View lifecycle
 
 - (void)viewDidLoad
 {
-    Contact* person1 = [[Contact alloc] init];
-    person1.firstName = @"Leaf";
-    person1.lastName = @"Li";
-    person1.address = @"Pudan Road 399, Shanghai, China";
-    person1.phone = @"38653539";
-    person1.mobile = @"13918425971";
-    person1.email = @"leaf.li@autodesk.com";
-    
-    Contact* person2 = [[Contact alloc] init];
-    person2.firstName = @"Ronnie";
-    person2.lastName = @"Xue";
-    person2.address = @"Pudan Road 399, Shanghai, China";
-    person2.phone = @"38653471";
-    person2.mobile = @"";
-    person2.email = @"ronnie.xue@autodesk.com";
-    
-    NSMutableArray* array = [[NSMutableArray alloc] init];
-    [array addObject:person1];
-    [array addObject:person2];
-    
-    self.contacts = array;
+    //
+    // make sure the contacts file exists.
+    //
+    [self copyDatabaseIfNeeded];
+    self.contacts = [self allContacts];
 
     [super viewDidLoad];
     
@@ -144,6 +200,7 @@
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         // Delete the row from the data source
         [contacts removeObjectAtIndex:indexPath.row];
+        [self saveContacts];
         [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
     }   
     else if (editingStyle == UITableViewCellEditingStyleInsert) {
