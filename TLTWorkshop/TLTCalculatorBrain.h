@@ -10,8 +10,9 @@
 
 enum Operator
 {
-    Noop,
-    Add
+    kNoop,
+    kAdd,
+    kMinus
 };
 
 @interface TLTCalculatorBrain : NSObject
@@ -19,5 +20,7 @@ enum Operator
 - (int) appendOperand:(int) digit;
 - (int) performOperator:(enum Operator) op;
 - (int) calculate;
+
+@property (nonatomic, assign) int operand;
 
 @end

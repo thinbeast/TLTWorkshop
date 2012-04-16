@@ -8,12 +8,23 @@
 
 #import "TLTCalculatorBrain.h"
 
+enum State
+{
+    kStart,
+    kDigit,
+    kOperator,
+    kCalculate
+};
+
 @interface TLTCalculatorBrain ()
 {
     enum Operator _operator;
     int _operand;
     int _register;
+    enum State _state;
 }
+
+- (void) calculateGuts;
 
 @end
 
@@ -25,39 +36,69 @@
     if (self) {
         _operand = 0;
         _register = 0;
-        _operator = Noop;
+        _operator = kNoop;
+        _state = kStart;
     }
     
     return self;
 }
 
+- (int) operand
+{
+    return _operand;
+}
+
+- (void) setOperand:(int)operand
+{
+    _operand = operand;
+    _state = kDigit;
+}
+
 - (int) appendOperand:(int) digit
 {
     _operand = _operand * 10 + digit;
+    _state = kDigit;
     return _operand;
 }
 
 - (int) performOperator:(enum Operator) op
 {
-    [self calculate];
-        
+    switch (_state)
+    {
+        case kDigit:
+            [self calculateGuts];
+            break;
+        default:
+            break;
+    }
+
+    _operand = 0;
     _operator = op;
+    _state = kOperator;
 
     return _register;
 }
 
-- (int) calculate
+- (void) calculateGuts
 {
     switch (_operator) {
-        case Add:
+        case kAdd:
             _register = _register + _operand;
+            break;
+        case kMinus:
+            _register = _register - _operand;
             break;
         default:
             _register = _operand;
             break;
     }
-    _operand = 0;
-    _operator = Noop;
+}
+
+- (int) calculate
+{
+    [self calculateGuts];
+    
+    _state = kCalculate;
     
     return _register;
 }

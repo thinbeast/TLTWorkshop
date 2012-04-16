@@ -10,7 +10,7 @@
 
 @interface TLTViewController : UIViewController
 {
-    IBOutlet UILabel* osd;
+    IBOutlet UITextField* osd;
 }
 
 -(IBAction)buttonPressed:(id)sender;

@@ -9,7 +9,7 @@
 #import "TLTViewController.h"
 #import "TLTCalculatorBrain.h"
 
-@interface TLTViewController ()
+@interface TLTViewController () <UITextFieldDelegate>
 {
     TLTCalculatorBrain* brain;
 }
@@ -51,13 +51,34 @@
         display = [brain calculate];
     }
     else if ([string isEqualToString:@"+"]) {
-        display = [brain performOperator:Add];
+        [osd resignFirstResponder];
+        display = [brain performOperator:kAdd];
+    }
+    else if ([string isEqualToString:@"-"]) {
+        [osd resignFirstResponder];
+        display = [brain performOperator:kMinus];
     }
     else {
+        [osd resignFirstResponder];
         int n = [string intValue];
         display = [brain appendOperand:n];
     }
     osd.text = [NSString stringWithFormat:@"%d", display];  
+}
+
+#pragma Mark - TextDelegate
+
+- (BOOL) textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
+{
+    NSCharacterSet *nonNumberSet = [[NSCharacterSet decimalDigitCharacterSet] invertedSet];
+    return [string isEqualToString:[string stringByTrimmingCharactersInSet:nonNumberSet]];
+}
+
+- (void) textFieldDidEndEditing:(UITextField *)textField
+{
+    int val = [textField.text intValue];
+    brain.operand = val;
+    osd.text = [NSString stringWithFormat:@"%d", val];
 }
 
 @end
